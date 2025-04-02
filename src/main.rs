@@ -117,7 +117,7 @@ fn main() {
             let finger = parts[3];
             if finger != "3" && !action.starts_with("GESTURE_HOLD") {
                 // mouse_down
-                vtrackpad.mouse_down();
+                vtrackpad.mouse_up();
                 continue;
             }
             let cancelled = parts.len() > 4 && parts[4] == "cancelled";
